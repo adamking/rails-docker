@@ -4,7 +4,7 @@ FROM nginx
 RUN apt-get update -qq && apt-get -y install apache2-utils
 
 # establish where Nginx should look for files
-ENV RAILS_ROOT /var/www/app_name
+ENV RAILS_ROOT /var/www/rails_app
 
 # Set our working directory inside the image
 WORKDIR $RAILS_ROOT
